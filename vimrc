@@ -87,7 +87,7 @@ set nu				"mostra o numero de linha
 set ruler
 set showmode
 set laststatus=2		"mosta unha liña de estado permanente abaixo
-colorscheme darkblue
+colorscheme delek
 set tabstop=4			"tamnho do tabulador = 3
 set expandtab	      "mete espacios en branco en vez de tabuladores
 set shiftwidth=4     "Son os espacios que mete cando pulsamos >> ou << e autoindent

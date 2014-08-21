@@ -113,9 +113,6 @@ map  i
 "Inserta un tabulador en modo comando"
 map <TAB> i<TAB>
 
-"Corrixe erro: Cando cortamos en modo comando con c, pasa automaticamente a modo inserción. Esta macro volve a modo comando"
-map c c
-
 "Corrixe erro en modo inserción: Cando damos a inicio fai cousas raras. Borra a linha e escribe un H"
 map! OH 0i
 

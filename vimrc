@@ -65,7 +65,7 @@ autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 map <leader>j :RopeGotoDefinition<CR>
 map <leader>r :RopeRename<CR>
-
+map <F2> :NERDTreeToggle<CR>
 
 """"" FIN Configuracion para Modern Python IDE 
 

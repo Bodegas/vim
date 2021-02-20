@@ -1,0 +1,46 @@
+" Estes non veñen por defecto
+set nu				"mostra o numero de linha
+set ruler
+set showmode
+set laststatus=2		"mosta unha liña de estado permanente abaixo
+colorscheme delek
+set tabstop=4			"tamnho do tabulador = 3
+set expandtab	      "mete espacios en branco en vez de tabuladores
+set shiftwidth=4     "Son os espacios que mete cando pulsamos >> ou << e autoindent
+set textwidth=0
+"set autoindent					"autoindent activado
+hi StatusLine ctermbg=4 ctermfg=15
+
+
+"Estes son meus:"
+"inicio+reg.pag <-- inicio de documento en modo inserción"
+map! OH[5~ :1<CR>i
+
+"fin+av.pag. <-- fin de documento en modo modo inserción"
+map! OF[6~ :$<CR>i
+
+" inicio+reg.pag<-- inicio de documento en modo comando"
+map OH[5~ :1<CR>
+
+"Afin+av.pag <-- fin de documento en modo comando"
+map OF[6~ :$<CR>
+
+"Inserta unha retorno de carro en modo comando"
+map  i
+
+"Inserta un tabulador en modo comando"
+map <TAB> i<TAB>
+
+"Corrixe erro en modo inserción: Cando damos a inicio fai cousas raras. Borra a linha e escribe un H"
+map! OH 0i
+
+"Corrixe erro en modo inserción: Cando damo a fin Borra linha e escribe un F"
+map! OF $iOC
+
+"Corrixe erro en modo comando: Cando damos a inicio fai cousas raras. Escribe un H, un intro e salta a insertar"
+map OH iOH
+
+"Corrixe erro en modo comando: Cando damos a fin fai cousas raras. Escribe un F, un intro e salta a insertar"
+map OF iOF
+
+
